@@ -1,9 +1,9 @@
-interface MyInterface
+interface Animal
 {
    public void speak();
    public void eat();
 }
-class Dog implements MyInterface
+class Dog implements Animal
 {
    public void speak()
    {
@@ -14,7 +14,7 @@ class Dog implements MyInterface
 	System.out.println("Dog eat Bones");
    }
 }
-class Cat implements MyInterface
+class Cat implements Animal
 {
 	public void speak()
    {
@@ -30,8 +30,8 @@ class Interface
 {
 	public static void main(String arg[])
    {
-		MyInterface obj = new Dog();
-		MyInterface obj1 = new Cat();
+		Animal obj = new Dog();
+		Animal obj1 = new Cat();
 		obj.speak();
 		obj.eat();
 		obj1.speak();

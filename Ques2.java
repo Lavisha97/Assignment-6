@@ -1,5 +1,6 @@
 abstract class Animal
 {
+	String color, breed , name;
 	public void speak()
 	{
 		System.out.println("Animals produce sounds");
